@@ -146,7 +146,49 @@ footer p a {
   height: 50%;
 }
 
-/*
+
+
+
+/*Media Query for tablet viewport*/
+@media screen and {min-width: 630px} {
+
+}
+/*tablet viewport: Show tablet-desktop class, hide mobile class*/
+.tablet-desktop {
+        display: block;
+}
+
+.mobile {
+        display: none;
+}
+
+/*tablet viewport: style rule for header*/
+header{
+  position: static;
+  padding-bottom: 2%;
+}
+
+/*tabelt viewport:style Rules for nav area*/
+nav li{
+  border-top: none;
+  display: inline-block;
+  border-right: 1px solid #fff;
+}
+
+nav li: last-child{
+  border-right: none;
+  }
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+}
+
+  /*tablet viewport: style rules for main content area*/
+  main ul{
+      margin: 0 0 4% 10%;
+    }
+}
 #exercises {
   clear: left;
   border-top: 1px solid #000;
@@ -161,4 +203,38 @@ footer p a {
 
 #exercises dd {
   padding: 0.5% 1% 2% 0;
-} */
+}
+.tel-num{
+  font-size: 1.25em;
+
+}
+
+.map {
+  width: 600px;
+  height: 450px;
+  }
+
+}
+
+}
+/*Media Query for desktop viewport*/
+@media screen and (min-witch: 769px) {
+
+/*Desktop viewport: Style rules for nav area */
+header {
+    width: 25%
+    float: left;
+    padding-bottom: 0;
+}
+nav {
+    float: right;
+    width: 70%;
+    margin: 70%;
+    margin: 4em 1em 0 0;
+    }
+}
+
+nav ul {
+    text-align: right;
+}
+}
